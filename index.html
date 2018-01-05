@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>jQuery</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+	<script type="text/javascript">
+	//error 1: document.ready was missing
+		$(document).ready(function(){
+ 	  		for (i=1; i<=802; i++){
+ 	  			html_txt = "" ;
+	 			html_txt += "<image class='dex_entry' src= 'https://pokeapi.co/media/sprites/pokemon/";
+	 			html_txt += i;
+	 			html_txt += ".png'>";
+				$("#dex").append(html_txt);
+ 	  			console.log(i);
+ 	  		}
+		});	
+	</script>
+</head>
+<body>
+	<div id="dex"></div>
+</body>
+</html>
